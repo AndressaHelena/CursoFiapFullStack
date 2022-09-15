@@ -33,3 +33,35 @@ switch (statusUser) {
 
 
 console.log(`Hello World! ${nameUser}`);
+
+console.log("___________________________");
+
+
+const yearFactory = new Date().getFullYear();
+
+for(let x:number = yearFactory; x >= 1920; x-=10){
+  if(x >= 1990 && x < 2000){
+    continue;
+  }
+  console.log(x);
+
+//operadores incrementais e decrementais
+// x++ x = x + 1 - incremento
+// ++x x = x + 1 - pré-incremento
+// x-- x = x - 1 - decremento
+// --x x = x - 1 - pré-decremento
+  
+}
+let num = 2;
+for(let tabuada:number = 0; tabuada <= 10; tabuada++){
+  
+  if( tabuada > 2 && tabuada < 10){
+    if(tabuada % 2 == 1 && tabuada > 3){
+      console.log(".");
+      
+    }
+    continue;
+  }
+  console.log(`${num} x ${tabuada} = ${num*tabuada}`);
+  
+}

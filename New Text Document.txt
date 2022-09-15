@@ -1,0 +1,4 @@
+mkdir fiap && cd fiap && mkdir logica web node react && echo "Vai Corinthians!"
+
+criar pasta 
+echo node_modules/ > .gitignore
