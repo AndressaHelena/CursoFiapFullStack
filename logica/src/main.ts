@@ -58,7 +58,6 @@ for(let tabuada:number = 0; tabuada <= 10; tabuada++){
   if( tabuada > 2 && tabuada < 10){
     if(tabuada % 2 == 1 && tabuada > 3){
       console.log(".");
-      
     }
     continue;
   }
