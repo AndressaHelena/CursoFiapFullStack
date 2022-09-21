@@ -1,12 +1,17 @@
-class Funcionario{
-    nome:string = 'Usuario';
-    ri:string = '132345';
-    cpf:string = '123.456.789-00';
+import Pessoa from "../Pessoa";
 
-    cadFuncionario(parametroNome: string, parametroRi: string, parametroCpf: string){
-        this.nome = parametroNome;
+class Funcionario extends Pessoa{
+
+    ri:string;
+    cpf:string;
+
+    constructor(parametroNome: string, parametroIdade: number, parametroRi: string, parametroCpf: string){
+        super(parametroNome, parametroIdade)
         this.ri = parametroRi;
         this.cpf = parametroCpf;
+        
+    }
+    cadFuncionario(){
         console.log(`Funcionário ${this.nome} cadastrado com sucesso!`);
     }
 }
